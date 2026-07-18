@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Laralink">
+  <!-- Favicon Icon -->
+  <link rel="icon" href="assets/img/favicon.png">
+  <!-- Site Title -->
+  <title>ACCUM Global Missions Inc. - A Cumplir una Misión</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/css/slick.min.css">
+  <link rel="stylesheet" href="assets/css/odometer.css">
+  <link rel="stylesheet" href="assets/css/light-gallerr.min.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    /* Readability shadow overlay for Hero text */
+    .cs_hero_title {
+      text-shadow: 2px 2px 12px rgba(0, 0, 0, 1), 0 0 8px rgba(0, 0, 0, 0.7);
+    }
+    .cs_hero_subtitle {
+      text-shadow: 1px 1px 10px rgba(0, 0, 0, 1), 0 0 6px rgba(0, 0, 0, 0.7);
+    }
+
+    /* Make hero background photos 20% visible (80% black mask) */
+    .cs_hero.cs_style_1 {
+      background-color: #000 !important; /* Ensure solid black behind photo */
+    }
+    .cs_hero.cs_style_1::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8) !important; /* 80% black curtain = 20% opacity */
+      z-index: 1;
+      pointer-events: none;
+    }
+    .cs_hero.cs_style_1 .container {
+      position: relative;
+      z-index: 2; /* keep text content on top of black curtain */
+    }
+    .cs_hero.cs_style_1 .cs_hero_shape_1,
+    .cs_hero.cs_style_1 .cs_hero_shape_2 {
+      z-index: 2; /* keep shapes visible on top of curtain */
+    }
+
+    /* Services Card Overlay for Readability */
+    .cs_card.cs_style_2 .cs_card_thumbnail {
+      position: relative;
+    }
+    .cs_card.cs_style_2 .cs_card_thumbnail::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.75) 100%);
+      z-index: 2;
+      pointer-events: none;
+    }
+    .cs_card.cs_style_2 .cs_card_title,
+    .cs_card.cs_style_2 .cs_card_subtitle {
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+      position: relative;
+      z-index: 6; /* stay above gradient and description overlays */
+    }
+
+    /* Responsive fixes for CTA funfact */
+    @media (max-width: 991px) {
+      .cs_funfact.cs_style_1 .cs_funfact_number {
+        font-size: 90px !important;
+      }
+      .cs_funfact.cs_style_1 .cs_sunfact_title {
+        font-size: 22px !important;
+      }
+    }
+    @media (max-width: 575px) {
+      .cs_funfact.cs_style_1 .cs_funfact_number {
+        font-size: 70px !important;
+      }
+      .cs_funfact.cs_style_1 .cs_sunfact_title {
+        font-size: 18px !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Start Preloader -->
+  <div class="cs_preloader">
+    <div class="cs_preloader_in">
+      <span></span>
+      <span></span>
+    </div>
+    <div class="cs_preloader_shape_1"><img src="assets/img/handmade_2.svg" alt="Image"></div>
+    <div class="cs_preloader_shape_2"><img src="assets/img/handmade_2.svg" alt="Image"></div>
+  </div>
+  <!-- End Preloader -->
+  <!-- Start Header Section -->
+  <header class="cs_site_header cs_style_1 cs_sticky_header">
+    <div class="cs_main_header">
+      <div class="container-fluid">
+        <div class="cs_main_header_in">
+          <div class="cs_main_header_left">
+            <a class="cs_site_branding" href="index.html">
+              <img src="assets/img/logo_accum.png" alt="ACCUM Logo" style="max-height: 55px; width: auto;">
+            </a>
+          </div>
+          <div class="cs_main_header_center">
+            <div class="cs_nav">
+              <ul class="cs_nav_list cs_fs_16 cs_bold cs_white_color cs_heading_font text-uppercase">
+                <li><a href="index.html#hero">Inicio</a></li>
+                <li><a href="index.html#about">Quiénes Somos</a></li>
+                <li><a href="index.html#services">Áreas de Enfoque</a></li>
+                <li><a href="index.html#causes">Ruta Formativa</a></li>
+                <li><a href="index.html#team">Directora</a></li>
+                <li><a href="index.html#testimonial">Testimonios</a></li>
+                <li class="menu_item_has_children"><a href="index.html#blog">Noticias</a>
+                  <ul>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="blog-with-sidebar.html">Blog con Barra Lateral</a></li>
+                    <li><a href="blog-details.html">Detalles de Blog</a></li>
+                  </ul>
+                <span class="cs_munu_dropdown_toggle"><span></span></span></li>
+                <li><a href="index.html#faq">Preguntas Frecuentes</a></li>
+                <li><a href="index.html#contact">Contacto</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="cs_main_header_right">
+            <button class="cs_btn cs_style_1 cs_modal_btn cs_accent_bg cs_fs_16 cs_bold cs_white_color cs_radius_30"
+              data-modal="donation"><span class="cs_btn_text">DONAR / APOYAR</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End Header Section -->
+  <!-- Start Page Header -->
+  <section class="cs_page_heading cs_bg_filed cs_center text-center cs_heading_bg" data-src="assets/img/page_heading_bg.jpg">
+    <div class="container">
+      <h1 class="cs_fs_51 cs_white_color cs_mb_11">Noticias y Testimonios</h1>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+        <li class="breadcrumb-item active">Noticias</li>
+      </ol>
+    </div>
+  </section>
+  <!-- End Page Header -->
+  <!-- Start Blog Section -->
+   <section>
+    <div class="cs_height_150 cs_height_lg_80"></div>
+    <div class="container">
+        <div class="row cs_gap_y_30">
+          <div class="col-lg-4 col-md-6">
+            <div class="cs_post cs_style_1 cs_white_bg cs_radius_15">
+              <a href="blog-details.html" class="cs_post_thumbnail position-relative">
+                <img src="assets/img/post_img_1.jpg" alt="Post Image">
+                <div class="cs_post_category cs_accent_bg cs_fs_14 cs_medium cs_white_color cs_radius_15 position-absolute">Misiones</div>
+              </a>
+              <div class="cs_post_content">
+                <div class="cs_post_meta cs_orange_color">Octubre 12, 2025</div>
+                <h3 class="cs_post_title cs_fs_28 cs_semibold">
+                  <a href="blog-details.html">Misiones en Europa: La Necesidad en España y Francia</a>
+                </h3>
+                <hr>
+                <div class="cs_post_info">
+                  <div class="cs_post_author">
+                    <img src="assets/img/icons/user-pen.svg" alt="User Icon">
+                    <span>Por Lisbeth Velázquez</span>
+                  </div>
+                  <div class="cs_social_btns cs_style_1 cs_heading_color">
+                    <a href="#" class="cs_center cs_orange_bg cs_radius_50">
+                      <i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="cs_center cs_orange_bg cs_radius_50">
+                      <i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="cs_center cs_orange_bg cs_radius_50">
+                      <i class="fa-brands fa-facebook"></i></a>
+                    <a class="cs_center cs_share_btn cs_radius_50">
+                      <i class="fa-solid fa-share-nodes"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="cs_post cs_style_1 cs_white_bg cs_radius_15">
+              <a href="blog-details.html" class="cs_post_thumbnail position-relative">
+                <img src="assets/img/post_img_2.jpg" alt="Post Image">
+                <div class="cs_post_category cs_accent_bg cs_fs_14 cs_medium cs_white_color cs_radius_15 position-absolute">Preparación</div>
+              </a>
+              <div class="cs_post_content">
+                <div class="cs_post_meta cs_orange_color">Noviembre 05, 2025</div>
+                <h3 class="cs_post_title cs_fs_28 cs_semibold">
+                  <a href="blog-details.html">Preparación Espiritual: El Taller Listos para Salir (LPS)</a>
+                </h3>
+                <hr>
+                <div class="cs_post_info">
+                  <div class="cs_post_author">
+                    <img src="assets/img/icons/user-pen.svg" alt="User Icon">
+                    <span>Por ACCUM Missions</span>
+                  </div>
+                  <div class="cs_social_btns cs_style_1 cs_heading_color">
+                    <a href="#" class="cs_center cs_orange_bg cs_radius_50">
+                      <i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="cs_center cs_orange_bg cs_radius_50">
+                      <i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="cs_center cs_orange_bg cs_radius_50">
+                      <i class="fa-brands fa-facebook"></i></a>
+                    <a class="cs_center cs_share_btn cs_radius_50">
+                      <i class="fa-solid fa-share-nodes"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="cs_post cs_style_1 cs_white_bg cs_radius_15">
+              <a href="blog-details.html" class="cs_post_thumbnail position-relative">
+                <img src="assets/img/post_img_3.jpg" alt="Post Image">
+                <div class="cs_post_category cs_accent_bg cs_fs_14 cs_medium cs_white_color cs_radius_15 position-absolute">Testimonios</div>
+              </a>
+              <div class="cs_post_content">
+                <div class="cs_post_meta cs_orange_color">Enero 18, 2026</div>
+                <h3 class="cs_post_title cs_fs_28 cs_semibold">
+                  <a href="blog-details.html">Testimonio en el Amazonas: Recordando el Viaje Misionero 2010</a>
+                </h3>
+                <hr>
+                <div class="cs_post_info">
+                  <div class="cs_post_author">
+                    <img src="assets/img/icons/user-pen.svg" alt="User Icon">
+                    <span>Por Líder de Viaje</span>
+                  </div>
+                  <div class="cs_social_btns cs_style_1 cs_heading_color">
+                    <a href="#" class="cs_center cs_orange_bg cs_radius_50">
+                      <i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="cs_center cs_orange_bg cs_radius_50">
+                      <i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="cs_center cs_orange_bg cs_radius_50"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="cs_center cs_share_btn cs_radius_50">
+                      <i class="fa-solid fa-share-nodes"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="cs_post cs_style_1 cs_white_bg cs_radius_15">
+              <a href="blog-details.html" class="cs_post_thumbnail position-relative">
+                <img src="assets/img/post_img_5.jpg" alt="Post Image">
+                <div class="cs_post_category cs_accent_bg cs_fs_14 cs_medium cs_white_color cs_radius_15 position-absolute">Comunidad</div>
+              </a>
+              <div class="cs_post_content">
+                <div class="cs_post_meta cs_orange_color">Marzo 04, 2026</div>
+                <h3 class="cs_post_title cs_fs_28 cs_semibold">
+                  <a href="blog-details.html">Transformación Comunitaria en Colombia: Impacto y Desafíos</a>
+                </h3>
+                <hr>
+                <div class="cs_post_info">
+                  <div class="cs_post_author">
+                    <img src="assets/img/icons/user-pen.svg" alt="User Icon">
+                    <span>Por Misionero Residente</span>
+                  </div>
+                  <div class="cs_social_btns cs_style_1 cs_heading_color">
+                    <a href="#" class="cs_center cs_orange_bg cs_radius_50">
+                      <i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="cs_center cs_orange_bg cs_radius_50">
+                      <i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="cs_center cs_orange_bg cs_radius_50"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="cs_center cs_share_btn cs_radius_50">
+                      <i class="fa-solid fa-share-nodes"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="cs_post cs_style_1 cs_white_bg cs_radius_15">
+              <a href="blog-details.html" class="cs_post_thumbnail position-relative">
+                <img src="assets/img/post_img_4.jpg" alt="Post Image">
+                <div class="cs_post_category cs_accent_bg cs_fs_14 cs_medium cs_white_color cs_radius_15 position-absolute">Iglesia</div>
+              </a>
+              <div class="cs_post_content">
+                <div class="cs_post_meta cs_orange_color">Febrero 22, 2026</div>
+                <h3 class="cs_post_title cs_fs_28 cs_semibold">
+                  <a href="blog-details.html">Movilización de la Iglesia: ¿Cómo enviar a tus propios misioneros?</a>
+                </h3>
+                <hr>
+                <div class="cs_post_info">
+                  <div class="cs_post_author">
+                    <img src="assets/img/icons/user-pen.svg" alt="User Icon">
+                    <span>Por Lisbeth Velázquez</span>
+                  </div>
+                  <div class="cs_social_btns cs_style_1 cs_heading_color">
+                    <a href="#" class="cs_center cs_orange_bg cs_radius_50">
+                      <i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="cs_center cs_orange_bg cs_radius_50">
+                      <i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="cs_center cs_orange_bg cs_radius_50">
+                      <i class="fa-brands fa-facebook"></i></a>
+                    <a class="cs_center cs_share_btn cs_radius_50">
+                      <i class="fa-solid fa-share-nodes"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="cs_post cs_style_1 cs_white_bg cs_radius_15">
+              <a href="blog-details.html" class="cs_post_thumbnail position-relative">
+                <img src="assets/img/post_img_6.jpg" alt="Post Image">
+                <div class="cs_post_category cs_accent_bg cs_fs_14 cs_medium cs_white_color cs_radius_15 position-absolute">Formación</div>
+              </a>
+              <div class="cs_post_content">
+                <div class="cs_post_meta cs_orange_color">Abril 15, 2026</div>
+                <h3 class="cs_post_title cs_fs_28 cs_semibold">
+                  <a href="blog-details.html">Capacitación Transcultural: Formando a la Nueva Generación de Obreros</a>
+                </h3>
+                <hr>
+                <div class="cs_post_info">
+                  <div class="cs_post_author">
+                    <img src="assets/img/icons/user-pen.svg" alt="User Icon">
+                    <span>Por Docente Invitado</span>
+                  </div>
+                  <div class="cs_social_btns cs_style_1 cs_heading_color">
+                    <a href="#" class="cs_center cs_orange_bg cs_radius_50">
+                      <i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="cs_center cs_orange_bg cs_radius_50">
+                      <i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="cs_center cs_orange_bg cs_radius_50">
+                      <i class="fa-brands fa-facebook"></i></a>
+                    <a class="cs_center cs_share_btn cs_radius_50">
+                      <i class="fa-solid fa-share-nodes"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cs_height_50 cs_height_lg_40"></div>
+          <div class="cs_center">
+            <a href="#" class="cs_btn cs_style_1 cs_orange_bg cs_fs_16 cs_bold cs_white_color cs_accent_hover cs_radius_30"><span class="cs_btn_text">Load More Post</span></a>
+          </div>
+    </div>
+    <div class="cs_height_150 cs_height_lg_80"></div>
+  </section>
+  <!-- End Blog Section -->
+  <!-- Start Donation modal -->
+  <div class="cs_modal cs_size_sm" data-modal="donation">
+    <div class="cs_close_overlay"></div>
+    <div class="cs_modal_in">
+      <div class="cs_modal_container cs_gray_bg cs_radius_15">
+        <button class="cs_close_modal cs_center">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="cs_donate_form_1 p-4">
+          <h2 class="cs_form_heading cs_fs_37 text-center mb-0">Apoya al Ministerio</h2>
+          <p class="text-center cs_fs_18 cs_body_color mt-2">Tu generosidad nos permite formar y enviar misioneros para impactar naciones con el evangelio.</p>
+          <div class="cs_height_30 cs_height_lg_20"></div>
+          
+          <div class="cs_donation_methods cs_white_bg cs_radius_10 p-4 shadow-sm" style="border: 1px solid #e7e7e7;">
+            <h4 class="cs_fs_21 cs_bold cs_orange_color mb-3"><i class="fa-solid fa-heart"></i> Métodos de Donación</h4>
+            
+            <div class="mb-3 border-bottom pb-2">
+              <h5 class="cs_bold cs_fs_18 mb-1"><i class="fa-solid fa-mobile-screen-button"></i> ATH Móvil</h5>
+              <p class="mb-0 cs_fs_16">Donar a través de ATH Móvil: <strong>[Número / ID de ACCUM]</strong></p>
+            </div>
+            
+            <div class="mb-3 border-bottom pb-2">
+              <h5 class="cs_bold cs_fs_18 mb-1"><i class="fa-solid fa-money-bill-transfer"></i> Zelle</h5>
+              <p class="mb-0 cs_fs_16">Email de Zelle: <strong>[Correo Zelle de ACCUM]</strong></p>
+            </div>
+
+            <div class="mb-3">
+              <h5 class="cs_bold cs_fs_18 mb-1"><i class="fa-solid fa-building-columns"></i> Transferencia Bancaria</h5>
+              <p class="mb-0 cs_fs_16" style="line-height: 1.4;">
+                Banco: <strong>[Nombre del Banco]</strong><br>
+                Tipo de Cuenta: <strong>[Ahorro/Corriente]</strong><br>
+                Número de Cuenta: <strong>[Número de Cuenta]</strong><br>
+                Ruta: <strong>[Número de Ruta]</strong>
+              </p>
+            </div>
+          </div>
+          <div class="cs_height_20"></div>
+          <p class="cs_fs_14 text-center cs_body_color italic mb-0">«Cada uno dé como propuso en su corazón... porque Dios ama al dador alegre.» — 2 Corintios 9:7</p>
+        </div>
+        <div class="cs-height_50 cs-height_lg_30"></div>
+      </div>
+    </div>
+  </div>
+  <!-- End Donation modal -->
+  <!-- Start Footer Section -->
+  <footer class="cs_footer cs_style_1 cs_heading_bg cs_bg_filed" data-src="assets/img/footer_bg_1.jpg">
+    <div class="container">
+      <div class="cs_newsletter cs_style_1 cs_orange_bg cs_radius_15 position-relative wow fadeInDown">
+        <div class="cs_newsletter_left">
+          <h2 class="cs_newsletter_title cs_fs_28 cs_bold cs_white_color">Suscríbete a nuestro Boletín</h2>
+          <p class="cs_gray_color mb-0">Únete para recibir noticias de misiones, testimonios y peticiones de oración.</p>
+        </div>
+        <form action="#" class="cs_newsletter_form">
+          <input type="email" class="cs_newsletter_input cs_radius_30" placeholder="Tu dirección de correo electrónico..." required>
+          <button type="submit" class="cs_btn cs_style_1 cs_accent_bg cs_white_color cs_dark_hover cs_radius_30"><span
+              class="cs_btn_text">Suscribirse</span></button>
+        </form>
+        <div class="cs_newsletter_shape_1 position-absolute">
+          <img src="assets/img/leaf_shape.svg" alt="Leaf Shape">
+        </div>
+        <div class="cs_newsletter_shape_2 position-absolute">
+          <img src="assets/img/leaf_shape.svg" alt="Leaf Shape">
+        </div>
+        <div class="cs_newsletter_shape_3 position-absolute">
+          <img src="assets/img/leaf_shape.svg" alt="Leaf Shape">
+        </div>
+      </div>
+    </div>
+    <div class="container cs_white_color">
+      <div class="cs_footer_row">
+        <div class="cs_footer_col">
+          <div class="cs_footer_widget">
+            <div class="cs_footer_text_widget cs_gray_color">
+              <img src="assets/img/logo_accum.png" alt="ACCUM Logo" style="max-height: 60px; width: auto; margin-bottom: 15px;">
+              <p>Comprometidos con la formación, movilización y envío de obreros y líderes para el cumplimiento de la Gran Comisión.</p>
+            </div>
+            <div class="cs_social_btns cs_style_1">
+              <a href="index.html#" class="cs_center cs_orange_bg cs_radius_50 cs_fs_14 cs_white_color">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="index.html#" class="cs_center cs_orange_bg cs_radius_50 cs_fs_14 cs_white_color">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="index.html#" class="cs_center cs_orange_bg cs_radius_50 cs_fs_14 cs_white_color">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a href="index.html#" class="cs_center cs_orange_bg cs_radius_50 cs_fs_14 cs_white_color">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="cs_footer_col">
+          <div class="cs_footer_widget">
+            <h2 class="cs_footer_widget_title cs_fs_21 cs_white_color cs_medium cs_body_font">Enlaces Útiles</h2>
+            <ul class="cs_footer_widget_menu cs_gray_color">
+              <li><a href="index.html#hero">Inicio</a></li>
+              <li><a href="index.html#about">Quiénes Somos</a></li>
+              <li><a href="index.html#services">Áreas de Enfoque</a></li>
+              <li><a href="index.html#causes">Ruta Formativa</a></li>
+              <li><a href="index.html#contact">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="cs_footer_col">
+          <div class="cs_footer_widget">
+            <h2 class="cs_footer_widget_title cs_fs_21 cs_white_color cs_medium cs_body_font">Nuestros Enfoques</h2>
+            <ul class="cs_footer_widget_menu cs_gray_color">
+              <li>Formación Misionera</li>
+              <li>Movilización de Equipos</li>
+              <li>Transformación Comunitaria</li>
+              <li>Acción Humanitaria</li>
+            </ul>
+          </div>
+        </div>
+        <div class="cs_footer_col">
+          <div class="cs_footer_widget">
+            <h2 class="cs_footer_widget_title cs_fs_21 cs_white_color cs_medium cs_body_font">Información de Contacto</h2>
+            <ul class="cs_footer_widget_menu cs_gray_color">
+              <li>Puerto Rico | Florida | Colombia | España</li>
+              <li><a href="tel:+17872061949">+1 (787) 206-1949</a></li>
+              <li><a href="mailto:acumplirconunamision@gmail.com">acumplirconunamision@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cs_footer_bottom cs_white_color">
+      <div class="container">
+        <div class="cs_footer_bottom_in">
+          <p class="cs_copyright mb-0">Todos los derechos reservados Copyright © 2026 <a href="index.html#">ACCUM Global Missions Inc.</a></p>
+          <ul class="cs_footer_widget_menu">
+            <li><a href="index.html#">Política de Privacidad</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer Section -->
+  <!-- Start Scroll Up Button -->
+  <div class="cs_scrollup cs_orange_bg cs_white_color cs_center cs_radius_50">
+    <i class="fa-solid fa-hand-point-up"></i></div>
+  <!-- End Scroll Up Button -->
+  <!-- Script -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/jquery.slick.min.js"></script>
+  <script src="assets/js/odometer.js"></script>
+  <script src="assets/js/light-gallery.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
