@@ -41,15 +41,8 @@
   $(window).on('load', function () {
     preloader();
   });
-  // Fallback in case window load event already fired
-  if (document.readyState === 'complete') {
-    preloader();
-  }
 
   $(function () {
-    // Fail-safe to ensure loader is never stuck
-    setTimeout(preloader, 500);
-
     mainNav();
     stickyHeader();
     dynamicBackground();
@@ -78,10 +71,8 @@
     1. Preloader
   --------------------------------------------------------------*/
   function preloader() {
-    $('.cs_preloader').fadeOut('slow', function () {
-      $(this).remove();
-    });
-    $('.cs_preloader_in').fadeOut('slow');
+    $('.cs_preloader').fadeOut();
+    $('cs_preloader_in').delay(150).fadeOut('slow');
   }
 
   /*--------------------------------------------------------------
