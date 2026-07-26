@@ -4,9 +4,12 @@ from PIL import Image, ImageOps, ImageEnhance, ImageFilter
 
 # Map destinations to source images (only team, about, cards, services, gallery, avatars, cta, posts)
 MAPPING = {
-    # Hero backgrounds (1920x1001) - we keep these, but overlay a black filter on top in HTML/CSS
-    "hero_img_1.jpg": "Entrenamientos Programa liderazgo misional/20131206_182149.jpg",
+    # Backgrounds from Image Library
+    "hero_img_1.jpg": "Imagenes de bibliotecas/believer-people-praying-in-church-2026-01-08-22-11-53-utc.jpg",
     "hero_img_2.jpg": "Entrenamientos Programa liderazgo misional/20131206_194444.jpg",
+    "pilares_bg.jpg": "Imagenes de bibliotecas/colorful-prayer-flags-against-a-clear-blue-sky-2026-03-19-09-26-09-utc.jpg",
+    "footer_bg_1.jpg": "Imagenes de bibliotecas/open-hands-in-prayer-outdoors-in-daylight-2026-01-07-23-15-10-utc.jpeg",
+    "causes_1_bg.jpg": "Imagenes de bibliotecas/cross-silhouette-against-golden-sunset-religious-s-2026-03-18-08-20-06-utc.jpg",
     
     # About Section images
     "about_img_1.jpg": "Fotos viaje españa 2011/136847.jpg",  # portrait (480x720) -> (954x1200)
@@ -60,7 +63,7 @@ MAPPING = {
     "post_details_2.jpg": "Viaje CUBA 2013/136686.jpg",     # 1047x540
     
     # Contact Form left side image
-    "contact_img_1.jpg": "Viaje CUBA 2013/136683.jpg",  # 948x892
+    "contact_img_1.jpg": "Imagenes de bibliotecas/hands-resting-on-chairs-in-green-and-purple-robes-2026-03-09-09-20-51-utc.jpg",  # 948x892
     
     # Testimonial avatars (PNGs, 150x150)
     "avatar_1.png": "Primer VIAJE ECUADOR ACCUM/136637.jpg",

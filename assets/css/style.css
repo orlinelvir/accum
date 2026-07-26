@@ -1774,6 +1774,23 @@ label {
 .cs_page_heading {
   height: 600px;
   padding: 120px 0 50px;
+  position: relative;
+}
+.cs_page_heading::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--heading-color);
+  opacity: 0.70;
+  pointer-events: none;
+  z-index: 0;
+}
+.cs_page_heading > * {
+  position: relative;
+  z-index: 1;
 }
 @media (max-width: 991px) {
   .cs_page_heading {
@@ -3283,6 +3300,23 @@ label {
 .cs_footer.cs_style_1 {
   padding-top: 1px;
   margin-top: 134px;
+  position: relative;
+}
+.cs_footer.cs_style_1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--heading-color);
+  opacity: 0.80;
+  pointer-events: none;
+  z-index: 0;
+}
+.cs_footer.cs_style_1 > * {
+  position: relative;
+  z-index: 1;
 }
 .cs_footer.cs_style_1 .cs_newsletter.cs_style_1 {
   margin-top: -134px;

@@ -4,7 +4,10 @@
   "description": "ACCUM Website",
   "main": "index.html",
   "scripts": {
-    "start": "python -m http.server 8000",
-    "dev": "python -m http.server 8000"
+    "start": "live-server",
+    "dev": "live-server"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
   }
 }
